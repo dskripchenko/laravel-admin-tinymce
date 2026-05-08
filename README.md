@@ -1,13 +1,33 @@
 # dskripchenko/laravel-admin-tinymce
 
-Альтернативный WYSIWYG-движок поверх TinyMCE для `dskripchenko/laravel-admin`.
+> 🌐 **English** · [Русский](README.ru.md) · [Deutsch](README.de.md) · [中文](README.zh.md)
 
-Полная спецификация: [../../docs/sister-packs/tinymce.md](../../docs/sister-packs/tinymce.md).
+Alternative WYSIWYG engine on top of TinyMCE. Bring your own license key (TinyMCE is GPL/commercial).
 
-## ⚠️ Лицензия
+A sister-pack for [`dskripchenko/laravel-admin`](https://github.com/dskripchenko/laravel-admin).
 
-TinyMCE — GPL-2.0+ или коммерческая лицензия Tiny. Этот пакет (composer + npm) под MIT, но runtime-зависимости — GPL/commercial. Перед использованием в проприетарном продукте проверь совместимость.
+[![Packagist](https://img.shields.io/packagist/v/dskripchenko/laravel-admin-tinymce)](https://packagist.org/packages/dskripchenko/laravel-admin-tinymce)
+[![License](https://img.shields.io/packagist/l/dskripchenko/laravel-admin-tinymce)](LICENSE)
 
-## Статус
+## Install
 
-Локальный dev (монорепо `dskripchenko/laravel-admin`). Перед релизом — отдельный репозиторий.
+```bash
+composer require dskripchenko/laravel-admin-tinymce
+php artisan migrate
+```
+
+The plugin auto-registers via Laravel package discovery. To publish the
+config:
+
+```bash
+php artisan vendor:publish --tag=tinymce-config
+```
+
+## Documentation
+
+- [Getting started](docs/en/getting-started.md)
+- [Usage](docs/en/usage.md)
+
+## License
+
+[MIT](LICENSE) © Denis Skripchenko
